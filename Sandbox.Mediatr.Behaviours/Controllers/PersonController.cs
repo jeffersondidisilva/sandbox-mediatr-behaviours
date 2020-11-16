@@ -17,7 +17,7 @@ namespace Sandbox.MediatR.Behaviours.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Get([FromBody] PersonCommand command)
+        public IActionResult Post([FromBody] PersonCommand command)
         {
             _mediator.Send(command);
             return OkResult();
